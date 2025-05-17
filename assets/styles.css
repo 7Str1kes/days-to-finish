@@ -1,26 +1,78 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #1e1e2f, #121212);
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
     text-align: center;
+    margin-top: 30px;
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 2rem;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
 }
 
-#countdown {
-    font-size: 3rem;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+.datetime-picker {
+    margin-bottom: 20px;
+}
+
+.datetime-picker input,
+.datetime-picker button {
+    padding: 8px;
+    margin: 0 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.datetime-picker button {
+    background-color: #5c5cff;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.countdown-box {
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+.calendar-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    font-size: 0.9rem;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+td.today {
+    background-color: #5c5cff;
+    border-radius: 50%;
+    font-weight: bold;
 }

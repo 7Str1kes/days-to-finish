@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuenta atrás para que terminen las clases.</title>
+    <title>Countdown</title>
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/main.js" defer></script>
 </head>
 <body>
-    <h1>Las clases terminan en:</h1>
-    <div id="countdown"></div>
+    <header>
+        <h1>Countdown!</h1>
+        <div class="datetime-picker">
+            <label>Set Target Date & Time:</label>
+            <input type="date" id="datePicker">
+            <input type="time" id="timePicker">
+            <button onclick="saveDate()">Save</button>
+        </div>
+    </header>
+    
+    <main>
+        <div id="countdown" class="countdown-box"></div>
+        <div id="calendar" class="calendar-box"></div>
+    </main>
 </body>
 </html>
